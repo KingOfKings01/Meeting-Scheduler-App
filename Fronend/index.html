@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Scheduler</title>
+</head>
+<body>
+    <h1>Available Meeting Times</h1>
+    <div id="meeting-times">
+        <!-- Meeting times will be dynamically inserted here -->
+    </div>
+
+    <div id="booking-form" style="display: none;">
+        <h2>Book a Meeting</h2>
+        <form id="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <button type="submit">Book Meeting</button>
+        </form>
+    </div>
+
+    <h2>Booked Meetings</h2>
+    <div id="booked-meetings">
+        <!-- Booked meetings will be dynamically inserted here -->
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</body>
+</html>
