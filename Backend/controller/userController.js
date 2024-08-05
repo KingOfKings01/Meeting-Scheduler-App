@@ -6,7 +6,7 @@ exports.getAllUsers = async (req, res) => {
     const users = await User.findAll();
     console.log();
     console.log();
-    console.log("DDDDDDDDDDDDDDDDDDDDDDDD:", await users[0].getMeeting());
+    console.log("DDDDDDDDDDDDDDDDDDDDDDDD:");
     console.log();
     console.log();
     res.json(users);
